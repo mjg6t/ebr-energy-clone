@@ -22,18 +22,29 @@
             <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SOLUTIONS</a>
+                        <a class="nav-link" href="renewableinstallation.html" style="font-size: clamp(14px, 2vw, 16px) !important;">Installation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT US</a>
+                        <a class="nav-link" href="evchargingstation.html" style="font-size: clamp(14px, 2vw, 16px) !important;">EV Station</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-primary">GET IN TOUCH</button>
+                        <a class="nav-link" href="consulting&advisory.html" style="font-size: clamp(14px, 2vw, 16px) !important;">Consulting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section" style="font-size: clamp(14px, 2vw, 16px) !important;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <button  onclick="openEmail()" type="button" class="btn btn-primary" style="font-size: clamp(14px, 2vw, 16px) !important;">Get In Touch</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <script>
+        function openEmail() {
+            window.location.href = "mailto:support@ebrenergy.com";
+        }
+    </script>
     
     <!-- <div class="container-fluid">
         <div class="row">
@@ -125,7 +136,7 @@
 
 
     <!-- 2 Cols Row Bottom -->
-    <div class="container-fluid">
+    <div id="about-section" class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-12 p-0 mb-3 mb-lg-0">
                 <img src="assets/az7uI9QeqSrC71ElzBbXmNUfa8.jpg" alt="" style="object-fit: fill; height: 100%; width: 100%;">
@@ -195,18 +206,18 @@
     <footer class="footer text-muted text-left text-lg-start" style="border-top: 1px solid #cccccc; opacity: 0.7;">
         <!-- Watermark -->
         <div class="container">
-            <div class="row" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; margin-top: 15%;">
+            <div class="row" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; margin-top: 5%;">
                 <div class="col-sm-4 d-flex flex-column" style="margin-bottom: 50pt;">
                     <span style="margin-bottom: 10pt;">Feature</span>
                     <span style="margin-bottom: 10pt;">Learn</span>
                     <span>Plugins</span>
                 </div>
-                <div class="col-sm-4 d-flex flex-column" style="margin-bottom: 50pt;">
+                <div class="col-sm-4 d-flex flex-column" style="margin-bottom: 20pt;">
                     <span style="margin-bottom: 10pt;">Blog</span>
                     <span style="margin-bottom: 10pt;">Personal</span>
                     <span>Startup</span>
                 </div>
-                <div class="col-sm-4 d-flex flex-column" style="margin-bottom: 10%;">
+                <div class="col-sm-4 d-flex flex-column" style="margin-bottom: 5%;">
                     <span style="margin-bottom: 10pt;">Updates</span>
                     <span style="margin-bottom: 10pt;">Community</span>
                     <span>Contacts</span>
