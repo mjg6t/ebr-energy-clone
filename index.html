@@ -56,6 +56,25 @@
             window.location.href = "mailto:support@ebrenergy.com";
         }
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const navbarLinks = document.querySelectorAll('.navbar-nav a, .navbar-nav button');
+      
+          navbarLinks.forEach(function (navbarLink) {
+            navbarLink.addEventListener('click', function (event) {
+              const navbarCollapse = document.querySelector('.navbar-collapse');
+              if (navbarCollapse.classList.contains('show')) {
+                navbarCollapse.classList.remove('show');
+              } else {
+                const href = navbarLink.getAttribute('href');
+                if (href && href !== '#') {
+                  window.location.href = href;
+                }
+              }
+            });
+          });
+        });
+    </script>
     
     <!-- <div class="container-fluid">
         <div class="row">
